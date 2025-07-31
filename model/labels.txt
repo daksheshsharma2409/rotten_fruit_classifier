@@ -1,0 +1,6 @@
+0 Good Apple
+1 Bad Apple
+2 Good Orange
+3 Bad Orange
+4 Bad Mango
+5 Good Mango

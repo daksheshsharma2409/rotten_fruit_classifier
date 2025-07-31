@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fruit Quality Inspector</title>
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">🍎 Fruit Quality Inspector</h2>
+    
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload an Image</label>
+        <input class="form-control" type="file" id="image" name="image" accept="image/*" capture="environment" required>
+        </div>
+      <button type="submit" class="btn btn-primary w-100">Analyze</button>
+    </form>
+
+    {% if result %}
+    <div class="alert alert-info mt-4 text-center">
+      <h4 class="mb-0">{{ result }}</h4>
+    </div>
+    {% endif %}
+  </div>
+
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

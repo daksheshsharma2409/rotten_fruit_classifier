@@ -59,6 +59,13 @@ fruit-classifier/
 
 ---
 
+## 📸 App Interface
+
+![App Screenshot](Screenshots/laptop_view.png)
+![App Screenshot](Screenshots/phone_view_1.jpg)
+![App Screenshot](Screenshots/phone_view_2.jpg)
+
+
 ## 🧪 Run Locally
 
 ---
